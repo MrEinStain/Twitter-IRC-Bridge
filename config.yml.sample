@@ -3,6 +3,7 @@ consumer-secret: ""
 host: irc.freenode.net
 nickserv: ""
 nickname: b3TwitterTest
+password: ""
 oauth-secret: ""
 oauth-token: ""
 owner: "blha303"

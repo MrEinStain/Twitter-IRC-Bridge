@@ -27,6 +27,7 @@ def parsemsg(msg):
 
 class TwitterProtocol(irc.IRCClient):
     nickname = config["nickname"]
+    password = config["password"]
     username = 'Twitter'
     versionName = 'Twitter'
     versionNum = 'v1.6'
