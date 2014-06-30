@@ -105,7 +105,7 @@ class TwitterProtocol(irc.IRCClient):
         except StopIteration:
             key = None
         split = message.split(" ")
-        if message == "!twitter":
+        if message == "!twitter" and nick == config["owner"]:
             if key:
                 self._send_message("https://twitter.com/" + key, channel)
             else:
