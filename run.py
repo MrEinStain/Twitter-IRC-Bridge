@@ -120,7 +120,7 @@ class TwitterProtocol(irc.IRCClient):
                 self.join(split[2])
                 self._send_message("Hi! I'm here to relay messages from https://twitter.com/%s to this "
                                    "channel. Please ask %s if you have any questions or would like"
-                                   "this bot removed." % (config["owner"], split[1]), split[2])
+                                   "this bot removed." % (split[1], config["owner"]), split[2])
                 self._send_message("Done.", channel)
         elif split[0] == "!del" and nick == config["owner"]:
             if len(split) != 2:
