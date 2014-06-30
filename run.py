@@ -22,7 +22,7 @@ def munge(inp):
 def parsemsg(msg):
     for i in msg["entities"]["urls"]:
         msg["text"] = msg["text"].replace(i["url"], i["expanded_url"])
-    return msg["text"]
+    return msg["text"].replace("\n", " ")
 
 
 class TwitterProtocol(irc.IRCClient):
